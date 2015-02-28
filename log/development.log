@@ -3563,3 +3563,336 @@ Processing by CitiesController#index as HTML
   Rendered layouts/_navigation.html.erb (4.8ms)
   Rendered layouts/_messages.html.erb (0.1ms)
 Completed 200 OK in 266ms (Views: 263.4ms | ActiveRecord: 0.8ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "user@example.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "user@example.com"], ["encrypted_password", "$2a$10$O/gfo4Ju28g1U7FF8IEOZuDaHcEwE5iVyCd0izlBL8/7gLHbQHKFu"], ["created_at", "2015-02-28 03:54:12.606265"], ["updated_at", "2015-02-28 03:54:12.606265"]]
+  [1m[35m (84.6ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Kertzmannfort"], ["short_name", "OK"], ["created_at", "2015-02-28 03:54:12.704157"], ["updated_at", "2015-02-28 03:54:12.704157"]]
+  [1m[36m (71.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "North Rubieburgh"], ["short_name", "AK"], ["created_at", "2015-02-28 03:54:12.780777"], ["updated_at", "2015-02-28 03:54:12.780777"]]
+  [1m[35m (83.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "East Jaydon"], ["short_name", "NC"], ["created_at", "2015-02-28 03:54:12.868181"], ["updated_at", "2015-02-28 03:54:12.868181"]]
+  [1m[36m (85.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Prudencechester"], ["short_name", "ME"], ["created_at", "2015-02-28 03:54:12.956499"], ["updated_at", "2015-02-28 03:54:12.956499"]]
+  [1m[35m (73.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Lake Isacfort"], ["short_name", "GA"], ["created_at", "2015-02-28 03:54:13.034983"], ["updated_at", "2015-02-28 03:54:13.034983"]]
+  [1m[36m (82.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "East Keltonside"], ["short_name", "WI"], ["created_at", "2015-02-28 03:54:13.122796"], ["updated_at", "2015-02-28 03:54:13.122796"]]
+  [1m[35m (73.0ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Krajcikfort"], ["short_name", "WA"], ["created_at", "2015-02-28 03:54:13.200248"], ["updated_at", "2015-02-28 03:54:13.200248"]]
+  [1m[36m (83.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Morissetteborough"], ["short_name", "MI"], ["created_at", "2015-02-28 03:54:13.288792"], ["updated_at", "2015-02-28 03:54:13.288792"]]
+  [1m[35m (83.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Koelpinhaven"], ["short_name", "WI"], ["created_at", "2015-02-28 03:54:13.377751"], ["updated_at", "2015-02-28 03:54:13.377751"]]
+  [1m[36m (82.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Champlinville"], ["short_name", "ND"], ["created_at", "2015-02-28 03:54:13.466323"], ["updated_at", "2015-02-28 03:54:13.466323"]]
+  [1m[35m (83.4ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Conroybury"], ["short_name", "ME"], ["created_at", "2015-02-28 03:54:13.554760"], ["updated_at", "2015-02-28 03:54:13.554760"]]
+  [1m[36m (110.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Lake Johnny"], ["short_name", "KS"], ["created_at", "2015-02-28 03:54:13.669869"], ["updated_at", "2015-02-28 03:54:13.669869"]]
+  [1m[35m (95.2ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "East Cordellbury"], ["short_name", "RI"], ["created_at", "2015-02-28 03:54:13.769530"], ["updated_at", "2015-02-28 03:54:13.769530"]]
+  [1m[36m (93.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "North Jaidenchester"], ["short_name", "KS"], ["created_at", "2015-02-28 03:54:13.868341"], ["updated_at", "2015-02-28 03:54:13.868341"]]
+  [1m[35m (94.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Gillianville"], ["short_name", "IN"], ["created_at", "2015-02-28 03:54:13.967910"], ["updated_at", "2015-02-28 03:54:13.967910"]]
+  [1m[36m (95.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Raynorburgh"], ["short_name", "DE"], ["created_at", "2015-02-28 03:54:14.067474"], ["updated_at", "2015-02-28 03:54:14.067474"]]
+  [1m[35m (96.0ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Isaacfort"], ["short_name", "MD"], ["created_at", "2015-02-28 03:54:14.168393"], ["updated_at", "2015-02-28 03:54:14.168393"]]
+  [1m[36m (82.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Gutkowskiton"], ["short_name", "AZ"], ["created_at", "2015-02-28 03:54:14.255498"], ["updated_at", "2015-02-28 03:54:14.255498"]]
+  [1m[35m (94.7ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Lake Joannetown"], ["short_name", "KS"], ["created_at", "2015-02-28 03:54:14.355625"], ["updated_at", "2015-02-28 03:54:14.355625"]]
+  [1m[36m (93.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Pagacmouth"], ["short_name", "AR"], ["created_at", "2015-02-28 03:54:14.456067"], ["updated_at", "2015-02-28 03:54:14.456067"]]
+  [1m[35m (93.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Greenfelderfort"], ["short_name", "KY"], ["created_at", "2015-02-28 03:54:14.554776"], ["updated_at", "2015-02-28 03:54:14.554776"]]
+  [1m[36m (95.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Maggioburgh"], ["short_name", "UT"], ["created_at", "2015-02-28 03:54:14.671864"], ["updated_at", "2015-02-28 03:54:14.671864"]]
+  [1m[35m (77.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "South Kiana"], ["short_name", "MT"], ["created_at", "2015-02-28 03:54:14.753275"], ["updated_at", "2015-02-28 03:54:14.753275"]]
+  [1m[36m (95.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Torpburgh"], ["short_name", "TX"], ["created_at", "2015-02-28 03:54:14.852836"], ["updated_at", "2015-02-28 03:54:14.852836"]]
+  [1m[35m (121.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "West Janet"], ["short_name", "KY"], ["created_at", "2015-02-28 03:54:14.978144"], ["updated_at", "2015-02-28 03:54:14.978144"]]
+  [1m[36m (92.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "North Mateoside"], ["short_name", "TN"], ["created_at", "2015-02-28 03:54:15.074220"], ["updated_at", "2015-02-28 03:54:15.074220"]]
+  [1m[35m (95.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Jaquelinchester"], ["short_name", "NE"], ["created_at", "2015-02-28 03:54:15.173499"], ["updated_at", "2015-02-28 03:54:15.173499"]]
+  [1m[36m (94.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Lake Taurean"], ["short_name", "UT"], ["created_at", "2015-02-28 03:54:15.273571"], ["updated_at", "2015-02-28 03:54:15.273571"]]
+  [1m[35m (106.4ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Lake Jaime"], ["short_name", "NJ"], ["created_at", "2015-02-28 03:54:15.384315"], ["updated_at", "2015-02-28 03:54:15.384315"]]
+  [1m[36m (94.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "West Geraldfurt"], ["short_name", "HI"], ["created_at", "2015-02-28 03:54:15.483046"], ["updated_at", "2015-02-28 03:54:15.483046"]]
+  [1m[35m (85.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Krishaven"], ["short_name", "LA"], ["created_at", "2015-02-28 03:54:15.571734"], ["updated_at", "2015-02-28 03:54:15.571734"]]
+  [1m[36m (84.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "West Devinfort"], ["short_name", "VT"], ["created_at", "2015-02-28 03:54:15.661324"], ["updated_at", "2015-02-28 03:54:15.661324"]]
+  [1m[35m (93.8ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "West Kaneton"], ["short_name", "NE"], ["created_at", "2015-02-28 03:54:15.760061"], ["updated_at", "2015-02-28 03:54:15.760061"]]
+  [1m[36m (94.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Xavierside"], ["short_name", "KS"], ["created_at", "2015-02-28 03:54:15.859412"], ["updated_at", "2015-02-28 03:54:15.859412"]]
+  [1m[35m (84.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "East Manueltown"], ["short_name", "OK"], ["created_at", "2015-02-28 03:54:15.947760"], ["updated_at", "2015-02-28 03:54:15.947760"]]
+  [1m[36m (85.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Lake Delaney"], ["short_name", "KY"], ["created_at", "2015-02-28 03:54:16.037066"], ["updated_at", "2015-02-28 03:54:16.037066"]]
+  [1m[35m (94.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Vincenzafurt"], ["short_name", "MD"], ["created_at", "2015-02-28 03:54:16.136619"], ["updated_at", "2015-02-28 03:54:16.136619"]]
+  [1m[36m (123.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Orinport"], ["short_name", "VA"], ["created_at", "2015-02-28 03:54:16.265484"], ["updated_at", "2015-02-28 03:54:16.265484"]]
+  [1m[35m (88.9ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Estefaniafort"], ["short_name", "UT"], ["created_at", "2015-02-28 03:54:16.359333"], ["updated_at", "2015-02-28 03:54:16.359333"]]
+  [1m[36m (84.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Lake Jeffrey"], ["short_name", "OH"], ["created_at", "2015-02-28 03:54:16.447169"], ["updated_at", "2015-02-28 03:54:16.447169"]]
+  [1m[35m (84.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Wilmamouth"], ["short_name", "DE"], ["created_at", "2015-02-28 03:54:16.537401"], ["updated_at", "2015-02-28 03:54:16.537401"]]
+  [1m[36m (127.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Swaniawskitown"], ["short_name", "NY"], ["created_at", "2015-02-28 03:54:16.668037"], ["updated_at", "2015-02-28 03:54:16.668037"]]
+  [1m[35m (136.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Lake Karliport"], ["short_name", "AL"], ["created_at", "2015-02-28 03:54:16.808267"], ["updated_at", "2015-02-28 03:54:16.808267"]]
+  [1m[36m (165.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "South Clementinachester"], ["short_name", "ID"], ["created_at", "2015-02-28 03:54:16.977791"], ["updated_at", "2015-02-28 03:54:16.977791"]]
+  [1m[35m (83.5ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Runolfsdottirburgh"], ["short_name", "IL"], ["created_at", "2015-02-28 03:54:17.067009"], ["updated_at", "2015-02-28 03:54:17.067009"]]
+  [1m[36m (82.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Lake Laurenmouth"], ["short_name", "NC"], ["created_at", "2015-02-28 03:54:17.154823"], ["updated_at", "2015-02-28 03:54:17.154823"]]
+  [1m[35m (95.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "West Braeden"], ["short_name", "NC"], ["created_at", "2015-02-28 03:54:17.254074"], ["updated_at", "2015-02-28 03:54:17.254074"]]
+  [1m[36m (171.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mertzview"], ["short_name", "TN"], ["created_at", "2015-02-28 03:54:17.429239"], ["updated_at", "2015-02-28 03:54:17.429239"]]
+  [1m[35m (87.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Aronstad"], ["short_name", "NH"], ["created_at", "2015-02-28 03:54:17.519633"], ["updated_at", "2015-02-28 03:54:17.519633"]]
+  [1m[36m (85.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Lake Dorthy"], ["short_name", "FL"], ["created_at", "2015-02-28 03:54:17.609052"], ["updated_at", "2015-02-28 03:54:17.609052"]]
+  [1m[35m (110.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Michelebury"], ["short_name", "IL"], ["created_at", "2015-02-28 03:54:17.724325"], ["updated_at", "2015-02-28 03:54:17.724325"]]
+  [1m[36m (90.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Alfonzoland"], ["short_name", "IA"], ["created_at", "2015-02-28 03:54:17.818744"], ["updated_at", "2015-02-28 03:54:17.818744"]]
+  [1m[35m (84.0ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Lake Geoffrey"], ["short_name", "CA"], ["created_at", "2015-02-28 03:54:17.907765"], ["updated_at", "2015-02-28 03:54:17.907765"]]
+  [1m[36m (94.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Cullenview"], ["short_name", "MD"], ["created_at", "2015-02-28 03:54:18.007321"], ["updated_at", "2015-02-28 03:54:18.007321"]]
+  [1m[35m (83.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "West Waldoville"], ["short_name", "KY"], ["created_at", "2015-02-28 03:54:18.096197"], ["updated_at", "2015-02-28 03:54:18.096197"]]
+  [1m[36m (93.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "South Gladysville"], ["short_name", "OR"], ["created_at", "2015-02-28 03:54:18.194482"], ["updated_at", "2015-02-28 03:54:18.194482"]]
+  [1m[35m (85.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Jessietown"], ["short_name", "MT"], ["created_at", "2015-02-28 03:54:18.283466"], ["updated_at", "2015-02-28 03:54:18.283466"]]
+  [1m[36m (95.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kimhaven"], ["short_name", "FL"], ["created_at", "2015-02-28 03:54:18.382827"], ["updated_at", "2015-02-28 03:54:18.382827"]]
+  [1m[35m (84.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Littlefort"], ["short_name", "GA"], ["created_at", "2015-02-28 03:54:18.471252"], ["updated_at", "2015-02-28 03:54:18.471252"]]
+  [1m[36m (84.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Lindgrenhaven"], ["short_name", "HI"], ["created_at", "2015-02-28 03:54:18.559474"], ["updated_at", "2015-02-28 03:54:18.559474"]]
+  [1m[35m (85.2ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "New Mortonport"], ["short_name", "VA"], ["created_at", "2015-02-28 03:54:18.648610"], ["updated_at", "2015-02-28 03:54:18.648610"]]
+  [1m[36m (84.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Bruenborough"], ["short_name", "ND"], ["created_at", "2015-02-28 03:54:18.737009"], ["updated_at", "2015-02-28 03:54:18.737009"]]
+  [1m[35m (84.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Lake Annabelle"], ["short_name", "TN"], ["created_at", "2015-02-28 03:54:18.824932"], ["updated_at", "2015-02-28 03:54:18.824932"]]
+  [1m[36m (116.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ziemeshire"], ["short_name", "ID"], ["created_at", "2015-02-28 03:54:18.944581"], ["updated_at", "2015-02-28 03:54:18.944581"]]
+  [1m[35m (87.5ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "West Lorna"], ["short_name", "IN"], ["created_at", "2015-02-28 03:54:19.036442"], ["updated_at", "2015-02-28 03:54:19.036442"]]
+  [1m[36m (82.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "East Aliyahmouth"], ["short_name", "IL"], ["created_at", "2015-02-28 03:54:19.123966"], ["updated_at", "2015-02-28 03:54:19.123966"]]
+  [1m[35m (95.5ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "New Kattiebury"], ["short_name", "OH"], ["created_at", "2015-02-28 03:54:19.224186"], ["updated_at", "2015-02-28 03:54:19.224186"]]
+  [1m[36m (83.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Elinoreville"], ["short_name", "UT"], ["created_at", "2015-02-28 03:54:19.312299"], ["updated_at", "2015-02-28 03:54:19.312299"]]
+  [1m[35m (95.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Padbergport"], ["short_name", "AZ"], ["created_at", "2015-02-28 03:54:19.411246"], ["updated_at", "2015-02-28 03:54:19.411246"]]
+  [1m[36m (85.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Gastonmouth"], ["short_name", "AK"], ["created_at", "2015-02-28 03:54:19.500165"], ["updated_at", "2015-02-28 03:54:19.500165"]]
+  [1m[35m (84.2ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Sauerside"], ["short_name", "AZ"], ["created_at", "2015-02-28 03:54:19.589024"], ["updated_at", "2015-02-28 03:54:19.589024"]]
+  [1m[36m (83.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kuhnview"], ["short_name", "AR"], ["created_at", "2015-02-28 03:54:19.677986"], ["updated_at", "2015-02-28 03:54:19.677986"]]
+  [1m[35m (93.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Russeltown"], ["short_name", "OH"], ["created_at", "2015-02-28 03:54:19.776550"], ["updated_at", "2015-02-28 03:54:19.776550"]]
+  [1m[36m (106.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "South Coty"], ["short_name", "WY"], ["created_at", "2015-02-28 03:54:19.888015"], ["updated_at", "2015-02-28 03:54:19.888015"]]
+  [1m[35m (104.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Botsfordborough"], ["short_name", "AK"], ["created_at", "2015-02-28 03:54:19.997550"], ["updated_at", "2015-02-28 03:54:19.997550"]]
+  [1m[36m (96.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "East Rossieside"], ["short_name", "MO"], ["created_at", "2015-02-28 03:54:20.098200"], ["updated_at", "2015-02-28 03:54:20.098200"]]
+  [1m[35m (127.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Lake Ashlyshire"], ["short_name", "WY"], ["created_at", "2015-02-28 03:54:20.232335"], ["updated_at", "2015-02-28 03:54:20.232335"]]
+  [1m[36m (92.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Gilbertofurt"], ["short_name", "IL"], ["created_at", "2015-02-28 03:54:20.330044"], ["updated_at", "2015-02-28 03:54:20.330044"]]
+  [1m[35m (105.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Millerville"], ["short_name", "TX"], ["created_at", "2015-02-28 03:54:20.441216"], ["updated_at", "2015-02-28 03:54:20.441216"]]
+  [1m[36m (82.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Yundtmouth"], ["short_name", "MN"], ["created_at", "2015-02-28 03:54:20.529077"], ["updated_at", "2015-02-28 03:54:20.529077"]]
+  [1m[35m (84.2ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "South Olga"], ["short_name", "VA"], ["created_at", "2015-02-28 03:54:20.618092"], ["updated_at", "2015-02-28 03:54:20.618092"]]
+  [1m[36m (82.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Port Lennaberg"], ["short_name", "IL"], ["created_at", "2015-02-28 03:54:20.706623"], ["updated_at", "2015-02-28 03:54:20.706623"]]
+  [1m[35m (83.0ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Herminiofurt"], ["short_name", "NH"], ["created_at", "2015-02-28 03:54:20.795387"], ["updated_at", "2015-02-28 03:54:20.795387"]]
+  [1m[36m (82.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Port Rogers"], ["short_name", "AK"], ["created_at", "2015-02-28 03:54:20.883587"], ["updated_at", "2015-02-28 03:54:20.883587"]]
+  [1m[35m (105.0ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "West Mozelleland"], ["short_name", "IA"], ["created_at", "2015-02-28 03:54:20.994054"], ["updated_at", "2015-02-28 03:54:20.994054"]]
+  [1m[36m (106.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Savanahshire"], ["short_name", "ME"], ["created_at", "2015-02-28 03:54:21.105105"], ["updated_at", "2015-02-28 03:54:21.105105"]]
+  [1m[35m (82.8ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Clementinebury"], ["short_name", "CO"], ["created_at", "2015-02-28 03:54:21.193255"], ["updated_at", "2015-02-28 03:54:21.193255"]]
+  [1m[36m (106.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kadenland"], ["short_name", "VA"], ["created_at", "2015-02-28 03:54:21.303493"], ["updated_at", "2015-02-28 03:54:21.303493"]]
+  [1m[35m (95.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Noelland"], ["short_name", "OR"], ["created_at", "2015-02-28 03:54:21.402985"], ["updated_at", "2015-02-28 03:54:21.402985"]]
+  [1m[36m (112.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "South Robinburgh"], ["short_name", "TN"], ["created_at", "2015-02-28 03:54:21.519388"], ["updated_at", "2015-02-28 03:54:21.519388"]]
+  [1m[35m (96.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "East Kylie"], ["short_name", "MD"], ["created_at", "2015-02-28 03:54:21.619286"], ["updated_at", "2015-02-28 03:54:21.619286"]]
+  [1m[36m (73.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Towneburgh"], ["short_name", "NC"], ["created_at", "2015-02-28 03:54:21.697448"], ["updated_at", "2015-02-28 03:54:21.697448"]]
+  [1m[35m (82.6ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "New Noe"], ["short_name", "NY"], ["created_at", "2015-02-28 03:54:21.785354"], ["updated_at", "2015-02-28 03:54:21.785354"]]
+  [1m[36m (84.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "East Marguerite"], ["short_name", "ND"], ["created_at", "2015-02-28 03:54:21.873823"], ["updated_at", "2015-02-28 03:54:21.873823"]]
+  [1m[35m (84.5ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Eliseville"], ["short_name", "SC"], ["created_at", "2015-02-28 03:54:21.962541"], ["updated_at", "2015-02-28 03:54:21.962541"]]
+  [1m[36m (84.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "South Letachester"], ["short_name", "GA"], ["created_at", "2015-02-28 03:54:22.051083"], ["updated_at", "2015-02-28 03:54:22.051083"]]
+  [1m[35m (94.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Jaskolskibury"], ["short_name", "WY"], ["created_at", "2015-02-28 03:54:22.150306"], ["updated_at", "2015-02-28 03:54:22.150306"]]
+  [1m[36m (84.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "New Earline"], ["short_name", "NY"], ["created_at", "2015-02-28 03:54:22.239357"], ["updated_at", "2015-02-28 03:54:22.239357"]]
+  [1m[35m (82.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "New Hettie"], ["short_name", "VT"], ["created_at", "2015-02-28 03:54:22.326873"], ["updated_at", "2015-02-28 03:54:22.326873"]]
+  [1m[36m (151.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "East Ray"], ["short_name", "CT"], ["created_at", "2015-02-28 03:54:22.481629"], ["updated_at", "2015-02-28 03:54:22.481629"]]
+  [1m[35m (96.0ms)[0m  commit transaction
+
+
+Started GET "/cities?page=1" for 127.0.0.1 at 2015-02-28 04:54:32 +0100
+Processing by CitiesController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities" LIMIT 2 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "cities"
+  Rendered cities/index.html.erb within layouts/application (13.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (2.4ms)
+  Rendered layouts/_navigation.html.erb (4.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 281ms (Views: 278.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cities?page=1" for 127.0.0.1 at 2015-02-28 04:55:47 +0100
+Processing by CitiesController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[35mCity Load (0.6ms)[0m  SELECT  "cities".* FROM "cities" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (20.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (25.8ms)
+  Rendered layouts/_navigation.html.erb (27.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 295ms (Views: 288.4ms | ActiveRecord: 2.2ms)
